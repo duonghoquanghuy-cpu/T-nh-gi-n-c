@@ -1,0 +1,11 @@
+CÁCH TẠO FILE APK (không cần cài Android Studio)
+
+1. Tạo tài khoản GitHub (miễn phí) và tạo một repository mới (để Private nếu muốn).
+2. Tải toàn bộ nội dung thư mục này lên repository (nút "Add file" > "Upload files").
+   Nhớ tải cả thư mục ẩn .github (nếu không thấy, kéo thả cả thư mục).
+3. Vào tab "Actions" > chọn "Build APK" > "Run workflow". Chờ khoảng 5-10 phút.
+4. Mở lần chạy vừa xong, kéo xuống mục "Artifacts", tải "gia-nuoc-apk" (file zip chứa app-debug.apk).
+5. Chép file app-debug.apk vào điện thoại Android, mở lên và cho phép "Cài đặt từ nguồn không xác định".
+
+Lưu ý: đây là bản debug dùng để cài trực tiếp, chưa ký để đưa lên Google Play.
+Muốn sửa giá hoặc giao diện: sửa file www/index.html rồi chạy lại bước 3.
